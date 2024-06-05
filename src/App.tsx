@@ -22,7 +22,7 @@ function App() {
     setError(false);
 
     axios
-      .get<Array<User>>("https://jsonplaceholder.typicode.com/users111")
+      .get<Array<User>>("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
         const data = res.data.map((user) => ({
           id: user.id,
